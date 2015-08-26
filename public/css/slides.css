@@ -1,0 +1,34 @@
+#slider{
+  width: 720px;
+  height:400px;
+  overflow: hidden;
+  z-index: 500;
+}
+
+#slider #slides{
+  display: block;
+  width: 5280px;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+}
+
+#slider .slide{
+  float: left;
+  list-style-type: none;
+  width: 720px;
+  height:400px;
+}
+
+.slide img{
+  height: 400px;
+}
+
+#gallery{
+  position: absolute;
+  top: 200px;
+  right: 0;
+  margin-right: 100px;
+  background: black;
+  height: 500px;
+}

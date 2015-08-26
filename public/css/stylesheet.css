@@ -23,6 +23,10 @@ body {
 
 .logo{
   width: 80px;
+  opacity: .8;
+}
+.logo:hover{
+  opacity: 1;
 }
 .menu{
   width: 400px;
