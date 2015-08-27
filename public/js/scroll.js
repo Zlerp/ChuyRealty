@@ -5,18 +5,20 @@
 $(function() {    // same as $( document ).ready(function() {
 
 
-  var width          = 720;
-  var animationSpeed = 1000;
-  var pause          = 5000;
-  var currentSlide   = 1;
+  var width           = 720;
+  var animationSpeed  = 1000;
+  var pause           = 5000;
+  var currentSlide    = 1;
 
-  // cache DOM  --> Only have to search page once.
+  // cache DOM --> Only have to search page once.
   var $slider         = $('#slider');
   var $slideContainer = $slider.find('#slides');
   var $slides         = $slideContainer.find('.slide');
   var end             = ($slides.length * width);
 
   var interval;
+
+  var clickHandler    = ('ontouchstart' in document.documentElement ? "touchstart" : "click");
 
   function startSlider(){
     interval = setInterval(function() {
@@ -79,7 +81,7 @@ $( "#menuBurger" ).click(function() {
   }
   });
 
-  $( ".menu li" ).on('click touchstart', function() {
+  $( ".menu li" ).bind(clickHandler, function() {
       $('.menu div').fadeTo(40, 1).fadeTo(140, 0.9);
       $(".menu").animate({'margin-left':'-=275px'},350);
       $(".layer").fadeTo(350, 0.4);
