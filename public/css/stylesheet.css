@@ -76,21 +76,24 @@ body {
   background-color: #000000;
   opacity: .4;
 }
-#back1{
+#splash{
   background: url("https://capitolrealestatereviews.files.wordpress.com/2013/08/finding-the-right-real-estate-agent.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
-#back2{
+#sale{
   /*background: url("http://www.miamiwaterworld.com/wp-content/uploads/2013/07/bigstockphoto_house_sold_sign_2540542.jpg") no-repeat center center fixed;*/
   background-size: cover;
   background-color: #f0f0f0;
 }
 
-#back3{
+#rent{
   background: url("") no-repeat center center fixed;
 }
-#back4{
+#about{
+  background: url("") no-repeat center center fixed;
+}
+#contact{
   background: url("") no-repeat center center fixed;
 }
 .items {
