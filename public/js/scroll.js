@@ -81,7 +81,7 @@ $( "#menuBurger" ).click(function() {
   }
   });
 
-  $( ".menu li" ).bind(clickHandler, function() {
+  $( ".menu div" ).bind(clickHandler, function() {
       $('.menu div').fadeTo(40, 1).fadeTo(140, 0.9);
       $(".menu").animate({'margin-left':'-=275px'},350);
       $(".layer").fadeTo(350, 0.4);
