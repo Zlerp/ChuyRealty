@@ -67,7 +67,19 @@ $(function() {    // same as $( document ).ready(function() {
 
   var mobCount = 1;
 
+
+
+  $("section").mouseup(function(e)  {
+    var subject = $(".menu");
+      if(e.target.id != subject.attr('id')) {
+        subject.animate({'margin-left':'-=275px'},150);
+        mobCount =1;
+        console.log(mobCount);
+      }
+    });
+
 $( "#menuBurger" ).click(function(evt) {
+  console.log(mobCount);
     $('#menuBurger').fadeTo(80, 1).fadeTo(140, 0.7);
     mobCount++;
     if (mobCount === 2){
@@ -82,6 +94,7 @@ $( "#menuBurger" ).click(function(evt) {
   evt.preventDefault();
   });
 
+
   $( ".menu a" ).bind(clickHandler, function() {
       $('.menu div').fadeTo(40, 1).fadeTo(140, 0.9);
       $(".menu").animate({'margin-left':'-=275px'},350);
@@ -92,4 +105,6 @@ $( "#menuBurger" ).click(function(evt) {
       $( ".logo a" ).click(function() {
         $('.logo').fadeTo(40, 1.5).fadeTo(140, 0.7);
       });
+
+
 });
