@@ -79,7 +79,7 @@ $( "#menuBurger" ).click(function() {
   }
   });
 
-  $( ".menu li" ).click(function() {
+  $( ".menu li" ).on('click touchstart', function() {
       $('.menu div').fadeTo(40, 1).fadeTo(140, 0.9);
       $(".menu").animate({'margin-left':'-=275px'},350);
       $(".layer").fadeTo(350, 0.4);
