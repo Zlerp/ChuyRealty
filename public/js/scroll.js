@@ -78,4 +78,15 @@ $( "#menuBurger" ).click(function() {
     mobCount = 1;
   }
   });
+
+  $( ".menu li" ).click(function() {
+      $('.menu div').fadeTo(40, 1).fadeTo(140, 0.9);
+      $(".menu").animate({'margin-left':'-=275px'},350);
+      $(".layer").fadeTo(350, 0.4);
+      mobCount = 1;
+    });
+
+      $( ".logo a" ).click(function() {
+        $('.logo').fadeTo(40, 1.5).fadeTo(140, 0.7);
+      });
 });

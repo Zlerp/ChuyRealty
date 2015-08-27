@@ -1,9 +1,16 @@
-@import url(http://fonts.googleapis.com/css?family=Squada+One);
-@import url(http://fonts.googleapis.com/css?family=Lato:400,100,300,700,900);
+@import url(https://fonts.googleapis.com/css?family=Squada+One);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900);
 * {
   box-sizing: border-box;
   margin: 0 auto;
 }
+p{
+  font-family: 'Lato', sans-serif;
+  color: white;
+  z-index: 50;
+}
+
+
 
 body {
   background: #000;
@@ -21,12 +28,13 @@ body {
   height: 70px;
   display: inline-block;
   padding-top: 27px;
+  opacity: .8;
 }
 .menu div:hover{
   background-color: #ffffff;
   color: black;
   font-weight: 300;
-  opacity: .7;
+  opacity: .9;
 }
 
 .navBar img{
@@ -46,21 +54,25 @@ body {
   background-color: #000000;
   opacity: .4;
 }
-#back1{
+#splash{
   background: url("https://capitolrealestatereviews.files.wordpress.com/2013/08/finding-the-right-real-estate-agent.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
-#back2{
+#sale{
   /*background: url("http://www.miamiwaterworld.com/wp-content/uploads/2013/07/bigstockphoto_house_sold_sign_2540542.jpg") no-repeat center center fixed;*/
   background-size: cover;
   background-color: #f0f0f0;
 }
 
-#back3{
+#rent{
   background: url("") no-repeat center center fixed;
 }
-#back4{
+#about{
+  background: url("https://static.wixstatic.com/media/41d000_c6a03c185abcdbc068379a16d53df847.jpg_srb_p_1000_669_75_22_0.50_1.20_0.00_jpg_srb") no-repeat center center fixed;
+  background-size: cover;
+}
+#contact{
   background: url("") no-repeat center center fixed;
 }
 .items {
@@ -80,12 +92,16 @@ body {
   width: 400px;
   margin: auto;
   position: absolute;
-  top: 0;
+  top: -500px;
   left: 0;
   bottom: 0;
   right: 0;
   text-align: center;
   font-size: 160px;
+}
+
+.item span{
+  text-shadow: -2px 1px 7px black;
 }
 
 
@@ -101,10 +117,18 @@ body {
 
 .logo{
   width: 80px;
-  opacity: .8;
+  opacity: .7;
 }
 .logo:hover{
-  opacity: 1;
+  opacity: .8;
+}
+.bannerB{
+  height: 400px;
+  opacity: .5;
+  background-color: #00467e;
+  position: absolute;
+  top: 100px;
+  width: 100%;
 }
 
 @media (min-width: 700px){
