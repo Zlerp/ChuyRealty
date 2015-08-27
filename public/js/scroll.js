@@ -73,8 +73,8 @@ $(function() {    // same as $( document ).ready(function() {
     var subject = $(".menu");
       if(e.target.id != subject.attr('id')) {
         subject.animate({'margin-left':'-=275px'},150);
+        $(".layer").fadeTo(150, 0.4);
         mobCount =1;
-        console.log(mobCount);
       }
     });
 
