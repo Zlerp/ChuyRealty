@@ -67,7 +67,7 @@ $(function() {    // same as $( document ).ready(function() {
 
   var mobCount = 1;
 
-$( "#menuBurger" ).click(function() {
+$( "#menuBurger" ).click(function(evt) {
     $('#menuBurger').fadeTo(80, 1).fadeTo(140, 0.7);
     mobCount++;
     if (mobCount === 2){
@@ -79,6 +79,7 @@ $( "#menuBurger" ).click(function() {
     $(".layer").fadeTo(350, 0.4);
     mobCount = 1;
   }
+  evt.preventDefault();
   });
 
   $( ".menu a" ).bind(clickHandler, function() {
