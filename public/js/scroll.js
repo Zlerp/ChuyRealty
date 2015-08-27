@@ -5,17 +5,16 @@
 $(function() {    // same as $( document ).ready(function() {
 
 
-  var width = 720;
+  var width          = 720;
   var animationSpeed = 1000;
-  var pause = 5000;
-  var currentSlide = 1;
+  var pause          = 5000;
+  var currentSlide   = 1;
 
   // cache DOM  --> Only have to search page once.
-  var $slider = $('#slider');
+  var $slider         = $('#slider');
   var $slideContainer = $slider.find('#slides');
-  var $slides = $slideContainer.find('.slide');
-
-  var end = ($slides.length * width);
+  var $slides         = $slideContainer.find('.slide');
+  var end             = ($slides.length * width);
 
   var interval;
 
@@ -61,12 +60,22 @@ $(function() {    // same as $( document ).ready(function() {
         $slideContainer.css('margin-left', 4560);
         }
       }, 0);
-    // }
-  });
-
-    //setInterval
-    //animate
-
-
 
   });
+
+  var mobCount = 1;
+
+$( "#menuBurger" ).click(function() {
+    $('#menuBurger').fadeTo(80, 1).fadeTo(140, 0.7);
+    mobCount++;
+    if (mobCount === 2){
+    $(".menu").animate({'margin-left':'+=275px'},350);
+    $(".layer").fadeTo(350, 0.8);
+    $(".layer").fadeTo(350, 0.8);
+    }else if (mobCount === 3) {
+    $(".menu").animate({'margin-left':'-=275px'},350);
+    $(".layer").fadeTo(350, 0.4);
+    mobCount = 1;
+  }
+  });
+});

@@ -11,36 +11,6 @@ body {
   margin: 0px;
 }
 
-.navBar{
-  position: fixed;
-  height: 70px;
-  width: 100%;
-  background-color: black;
-  z-index: 10;
-  opacity: .85;
-  box-shadow: 0 2px 5px;
-}
-
-.logo{
-  width: 80px;
-  opacity: .8;
-}
-.logo:hover{
-  opacity: 1;
-}
-.menu{
-  width: 400px;
-  color: white;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  right: 0;
-  font-size: 17px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 200;
-  text-align: center;
-}
-
 .menu ul{
   height: 100%;
   margin: 0;
@@ -116,4 +86,91 @@ body {
   right: 0;
   text-align: center;
   font-size: 160px;
+}
+
+
+.navBar{
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  background-color: black;
+  z-index: 10;
+  opacity: .85;
+  box-shadow: 0 2px 5px;
+}
+
+.logo{
+  width: 80px;
+  opacity: .8;
+}
+.logo:hover{
+  opacity: 1;
+}
+
+@media (min-width: 700px){
+.menu{
+  width: 400px;
+  color: white;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  font-size: 17px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 200;
+  text-align: center;
+}
+
+.hamburgerbuns{
+  display: none;
+}
+}
+
+@media (max-width: 700px){
+.menu{
+  width: 275px;
+    color: white;
+    height: 100%;
+    position: fixed;
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    background-color: black;
+    display: inline;
+    margin-left: -275px;
+}
+
+.menuPressed{
+  box-shadow: 2px 0px 5px black;
+}
+
+.menu div{
+  width: 100%;
+  border: 2px inset rgba(255, 255, 255, 0.37);
+  padding-top: 17px;
+
+}
+.logo{
+  float: right;
+}
+
+.hamburgerbuns{
+  color: white;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 13px;
+}
+
+#menuBurger{
+  opacity: .7;
+}
+#back1{
+  background: url("https://capitolrealestatereviews.files.wordpress.com/2013/08/finding-the-right-real-estate-agent.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 730px;
+}
+.item{
+  height: 740px;
+}
 }
