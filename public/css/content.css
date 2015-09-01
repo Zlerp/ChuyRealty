@@ -1,8 +1,57 @@
-#aboutp{
-  width: 600px;
-  font-size: 1.5em;
+
+.contentp{
   margin: 0 auto;
-  padding-top: 300px;
-  margin-right: 0;
-  padding-right: 50px;
+  padding-top: 90px;
+  width: 1000px;
+
+}
+/*
+.contentLayer{
+  background-color: #BF1E2E;
+  margin: 0 auto;
+  margin-top: 90px;
+  opacity: .6;
+  width: 100%;
+  height: 400px;
+}*/
+/*.contentLayerz{
+  background-color: black;
+  margin: 0 auto;
+  margin-top: 90px;
+  opacity: .6;
+  width: 100%;
+  height: 400px;
+}*/
+
+#aboutp{
+  z-index: 500;
+  width: 950px;
+  font-size: 1.6em;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 300;
+  text-align: center;
+  opacity: 1 !important;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  text-shadow: black -2px 2px 5px;
+}
+#aboutc{
+  z-index: 500;
+  width: 800px;
+  font-size: 3em;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 900;
+  text-align: center;
+  opacity: 1 !important;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  text-shadow: black -2px 2px 5px;
 }

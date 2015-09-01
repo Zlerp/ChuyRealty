@@ -8,6 +8,8 @@ p{
   font-family: 'Lato', sans-serif;
   color: white;
   z-index: 50;
+  margin: 0 auto;
+
 }
 
 
@@ -52,26 +54,36 @@ body {
   height: 100%;
   width: 100%;
   background-color: #000000;
-  opacity: .4;
+  opacity: .6;
+}
+
+.layerAbout{
+  height: 100%;
+  width: 100%;
+  background-color: #861520;
+  opacity: .6;
 }
 #splash{
   background: url("https://capitolrealestatereviews.files.wordpress.com/2013/08/finding-the-right-real-estate-agent.jpg") no-repeat center center fixed;
   background-size: cover;
+  height: 37vw;
 }
 
 #sale{
-  /*background: url("http://www.miamiwaterworld.com/wp-content/uploads/2013/07/bigstockphoto_house_sold_sign_2540542.jpg") no-repeat center center fixed;*/
+  /*background: url("http://www.miamiwaterworld.com/wp-content/unavbarloads/2013/07/bigstockphoto_house_sold_sign_2540542.jpg") no-repeat center center fixed;*/
   background-size: cover;
   background-color: #f0f0f0;
 }
 
 #rent{
   background: url("") no-repeat center center fixed;
+  background-color: #660202;
 }
 #about{
   background: url("https://static.wixstatic.com/media/41d000_c6a03c185abcdbc068379a16d53df847.jpg_srb_p_1000_669_75_22_0.50_1.20_0.00_jpg_srb") no-repeat center center fixed;
   background-size: cover;
 }
+
 #contact{
   background: url("") no-repeat center center fixed;
 }
@@ -83,6 +95,13 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
+  text-align: right;
+}
+.items .item1 {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  text-align: right;
 }
 .items .item span {
   font-family: 'Squada One', cursive;
@@ -102,6 +121,8 @@ body {
 
 .item span{
   text-shadow: -2px 1px 7px black;
+
+  margin-right: 0;
 }
 
 
@@ -110,17 +131,17 @@ body {
   height: 70px;
   width: 100%;
   background-color: black;
-  z-index: 10;
+  z-index: 10000;
   opacity: .85;
   box-shadow: 0 2px 5px;
 }
 
 .logo{
   width: 80px;
-  opacity: .7;
+  opacity: .9;
 }
 .logo:hover{
-  opacity: .8;
+  opacity: 1;
 }
 .bannerB{
   height: 400px;
@@ -130,6 +151,7 @@ body {
   top: 100px;
   width: 100%;
 }
+
 
 @media (min-width: 700px){
 .menu{
@@ -203,4 +225,25 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
+}
+
+
+#bannerInfo{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 70px;
+  height: 350px;
+  width: 100%;
+  z-index: 5000;
+
+}
+#bannerInfo img{
+  width: 100vw;
+  height: 33vw;
+  display: block;
+  /*opacity: .8;*/
+
 }
