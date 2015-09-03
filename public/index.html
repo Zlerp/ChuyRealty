@@ -1,4 +1,3 @@
-
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
   <link rel="stylesheet" type="text/css" href="css/slides.css">
@@ -16,6 +15,7 @@
     <meta charset="utf-8">
      <title></title>
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"></link>
+     <script src="https://maps.googleapis.com/maps/api/js"></script>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
      <script src="js/scroll.js"></script>
   </head>
@@ -68,10 +68,11 @@
     <div class="item" id="about">
       <div class="layerAbout"></div>
 
-          <!-- <span>ABOUT US</span> -->
+
         <div class="contentp">
           <!-- <div class="layer"></div> -->
           <div class="contentLayer"></div>
+          <h2 id="aboutTitle">ABOUT US</h2>
           <p id="aboutp">
             Welcome, my name is Hubert Chuy and I am a Real Estate Broker and also also a Staff Sargent in the U.S. Army 82nd Airborne Div. stationed in Fort Bragg. I am a Cuban-American and grew up in Miami, Florida where I am also licensed as a real estate broker. I started my first business in 2003, Creative Business Group LLC., where I practiced the home buying and selling process through two economic depressions and a couple of hurricanes. Additionally, I worked as an independent agent for Keyes Realty Company where I had the opportunity to learn all the ins and outs of what makes a home suitable for optimal comfort and safety whilst holding up as value as a solid investment even in today's market. After spending some time living in Europe, my wife and I decided that North Carolina would be the best place to raise our family.
           <br><br>
@@ -94,10 +95,11 @@
     </div> -->
 
     <div class="item" id="sale">
-      <!-- <span>FOR SALE</span> -->
+      <h2 id="titS">FOR SALE</h2>
       <div class="contentp">
         <div class="contentLayerz"></div>
-      <p id="aboutp">
+
+      <p id="abouts">
         Whether the home we are talking about is for you or for a loved one, buying a home is personal. It is where you will hold your memories, and also where your memories will be held. Let us help you find a happy home.
       <br>
         We here at Chuy Realty understand the volatile modern market, this is why you can trust us to guide you towards a smart investment that will not only will fulfill your needs but also retain and even appreciate in value.
@@ -106,16 +108,30 @@
     </div>
 
     <div class="item" id="rent">
-      <!-- <span>FOR RENT </span> -->
-      <p id="aboutp">
+      <h2 id="titR">FOR RENT </h2>
+      <p id="abouts">
         Long term or short rent, we can help. The reason that people have real estate agent's help them find places to live is that they are the experts in finding a place that will be suitable for your needs for whatever time frame you set. Let us help you a home today.
       </p>
     </div>
 
     <div class="item" id="contact">
-      <!-- <span>CONTACT US</span> -->
-      <p id="aboutc">Chuy Realty Group <br> Fayetteville NC 28311 <br> chuyrealty@gmail.com <br> Tel: 910-228-0167</p>
+      <h2 id="titC">CONTACT US</h2>
+      <ul class='itemContents'>
+            <li><div id="map"></div></li>
+            <li><p id="aboutc">Chuy Realty Group <br> Fayetteville NC 28311 <br> chuyrealty@gmail.com <br> Tel: 910-228-0167</p></li>
+
+        <!-- <div id="map"></div> -->
+      </ul>
+      <div class="social">
+        <ul>
+          <a href="#"><li><i class="fa fa-3x fa-twitter"></i></li></a>
+          <a href="#"><li><i class="fa fa-3x fa-facebook"></i></li></a>
+          <a href="#"><li><i class="fa fa-3x fa-google-plus"></i></li></a>
+        </ul>
+
+      </div>
     </div>
+
 
 
 
@@ -123,7 +139,7 @@
 
 
 
-
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?    v=3.exp&sensor=false&libraries=places,drawing,geometry"></script>
 
   </body>
 </html>
